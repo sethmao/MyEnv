@@ -1,0 +1,35 @@
+alias vi=vim
+
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+#android env setting
+export PATH=${PATH}:~/Dev/android/adt-bundle-mac-x86_64-20131030/sdk/platform-tools
+export PATH=${PATH}:~/Dev/android/adt-bundle-mac-x86_64-20131030/sdk/tools
+export PATH=${PATH}:~/Dev/android/gradle-2.1/bin
+#finish android
+
+#for Ant script
+export ANT_OPTS=-Xmx4g
+export _JAVA_OPTIONS=-Xmx4g
+#finish Ant
+
+#for Java
+export JAVA_HOME=/Library/Java/Home
+#finish Java
+
+#for mobileQQ project
+export proguard_4_9=~/Dev/android/adt-bundle-mac-x86_64-20131030/sdk/tools/proguard
+export android_home=~/Dev/android/adt-bundle-mac-x86_64-20131030/sdk
+#finish mobileQQ
+
+#proxy
+export http_proxy=http://web-proxyhk.oa.com:8080
+export https_proxy=http://web-proxyhk.oa.com:8080
+export ftp_proxy=http://web-proxyhk.oa.com:8080
+export all_proxy=http://web-proxyhk.oa.com:8080
+###finish proxy
+
+alias docker="export DOCKER_HOST=tcp://localhost:4243;docker"
+
+# adb
+alias adbd="adb devices"
